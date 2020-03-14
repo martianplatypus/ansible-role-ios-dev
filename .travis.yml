@@ -1,12 +1,9 @@
 ---
-language: generic
-
-osx_image: xcode10.1
+language: objective-c
+osx_image: xcode10.3
 
 env:
-  global:
-    - HOMEBREW_NO_INSTALL_CLEANUP=1
-    - HOMEBREW_NO_ANALYTICS=1
+  - ANSIBLE_VERSION='<2.8.0'
 
 before_install:
   # Install pip
