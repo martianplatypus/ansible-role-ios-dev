@@ -16,10 +16,10 @@ galaxy_info:
 
   galaxy_tags:
     - development
-    - iOS
+    - ios
     - swift
     - mac
-    - objective-c
+    - objectivec
     - swiftlint
 
 dependencies: []
