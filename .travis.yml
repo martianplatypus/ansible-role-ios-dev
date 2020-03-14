@@ -15,7 +15,7 @@ before_install:
 install:
   # Dependencies
   - >-
-    pip install "ansible{ANSIBLE_VERSION}"
+    pip install "ansible${ANSIBLE_VERSION}"
     ansible-lint
     yamllint
 
