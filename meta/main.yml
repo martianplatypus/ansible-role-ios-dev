@@ -1,0 +1,23 @@
+galaxy_info:
+  author: your name
+  description: An Ansible role for setting up a Mac for iOS development
+  company: None
+
+  license: MIT
+
+  min_ansible_version: 2.4
+
+  - name: MacOSX
+    versions:
+    - 10.13
+    - 10.14
+
+  galaxy_tags:
+    - development
+    - iOS
+    - swift
+    - mac
+    - objective-c
+    - swiftlint
+
+dependencies: []
