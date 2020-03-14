@@ -10,7 +10,7 @@ before_install:
   - curl https://bootstrap.pypa.io/get-pip.py | sudo -H /usr/bin/python
   - which pip
   - pip --version
-
+  - export PATH=HOME/Library/Python/2.7/bin:$PATH
 install:
   # Dependencies
   - >-
