@@ -1,21 +1,18 @@
 ---
 language: generic
 
-os: osx
 osx_image: xcode10.1
 
 env:
-  - HOMEBREW_NO_INSTALL_CLEANUP=1
-  - HOMEBREW_NO_ANALYTICS=1
-
-addons:
-  homebrew:
-    packages: python3
+  global:
+    - HOMEBREW_NO_INSTALL_CLEANUP=1
+    - HOMEBREW_NO_ANALYTICS=1
 
 before_install:
-  - python3 -m pip install --upgrade virtualenv
-  - virtualenv -p python3 --system-site-packages "$HOME/venv"
-  - source "$HOME/venv/bin/activate"
+  # Install pip
+  - curl https://bootstrap.pypa.io/get-pip.py | sudo -H /usr/bin/python
+  - which pip
+  - pip --version
 
 install:
   # Dependencies
