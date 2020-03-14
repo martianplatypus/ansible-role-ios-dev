@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: ios-dev
   author: martianplatypus
   description: An Ansible role for setting up a Mac for iOS development
   company: None
