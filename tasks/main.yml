@@ -1,10 +1,5 @@
 ---
 # tasks file for ios-dev
-
-- name: echo 'WIP'
-  command: echo "Work in Progress"
-  register: result
-
 - name: print message
   debug:
-    msg: "{{ result.stdout_lines }}"
+    msg: "Work in Progress"

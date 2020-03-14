@@ -12,17 +12,29 @@ matrix:
       osx_image: xcode10.1
 
 install:
-  # Install ansible
-  - pip install ansible
+  # Dependencies
+  - >-
+    pip install ansible
+    ansible-lint
+    yamllint
 
   # Check ansible version
   - ansible --version
+  - ansible-lint --version
+  - yamllint --version
 
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
 script:
+  # Lint all YAML files.
+  - yamllint .
+
+  # Check the role/playbook's syntax.
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
+
+  # Lint the role.
+  - ansible-lint
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
