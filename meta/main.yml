@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: martianplatypus
   description: An Ansible role for setting up a Mac for iOS development
@@ -7,10 +8,11 @@ galaxy_info:
 
   min_ansible_version: 2.4
 
-  - name: MacOSX
-    versions:
-    - 10.13
-    - 10.14
+  platforms:
+    - name: MacOSX
+      versions:
+        - 10.13
+        - 10.14
 
   galaxy_tags:
     - development
