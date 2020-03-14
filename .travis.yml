@@ -10,11 +10,12 @@ before_install:
   - curl https://bootstrap.pypa.io/get-pip.py | sudo -H /usr/bin/python
   - which pip
   - pip --version
-  - export PATH=HOME/Library/Python/2.7/bin:$PATH
+  - export PATH=${PATH}:/Users/travis/Library/Python/2.7/bin
+
 install:
   # Dependencies
   - >-
-    pip install ansible
+    pip install "ansible{ANSIBLE_VERSION}"
     ansible-lint
     yamllint
 
