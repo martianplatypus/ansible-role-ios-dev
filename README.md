@@ -1,5 +1,8 @@
-Ansible Role: ios-dev [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-=========
+Ansible Role: ios-dev
+=====================
+[![Galaxy Role][badge-role]][link-galaxy]
+[![MIT Licensed][badge-license]][link-license]
+[![Build Status][badge-travis]][link-travis]
 
 This role will set up your Mac for iOS development by installing essential tools like Xcode, Swiftlint, Carthage, Cocoapods, etc.
 
@@ -33,3 +36,10 @@ Author Information
 ------------------
 
 WIP
+
+[badge-role]: https://img.shields.io/ansible/role/47192.svg?style=flat-square
+[badge-license]: https://img.shields.io/github/license/martianplatypus/ansible-role-ios-dev
+[badge-travis]: https://img.shields.io/travis/com/martianplatypus/ansible-role-ios-dev
+[link-galaxy]: https://galaxy.ansible.com/martianplatypus/ios-dev/
+[link-license]: https://github.com/martianplatypus/ansible-role-ios-dev/blob/master/LICENSE
+[link-travis]: https://travis-ci.com/github/martianplatypus/ansible-role-ios-dev/
