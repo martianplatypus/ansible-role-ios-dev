@@ -1,8 +1,8 @@
 Ansible Role: ios-dev
 =====================
 [![Galaxy Role][badge-role]][link-galaxy]
-[![MIT Licensed][badge-license]][link-license]
 [![Build Status][badge-travis]][link-travis]
+[![MIT Licensed][badge-license]][link-license]
 
 This role will set up your Mac for iOS development by installing essential tools like Xcode, Swiftlint, Carthage, Cocoapods, etc.
 
