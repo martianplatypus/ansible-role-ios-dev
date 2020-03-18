@@ -1,9 +1,12 @@
 ---
-language: objective-c
-osx_image: xcode10.3
+language: generic
 
-env:
-  - ANSIBLE_VERSION='<2.8.0'
+matrix:
+  include:
+    # High Sierra
+    - os: osx
+      osx_image: xcode10.1
+      env: ANSIBLE_VERSION='<2.9.0'
 
 before_install:
   # Install pip
