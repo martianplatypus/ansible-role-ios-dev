@@ -40,6 +40,6 @@ WIP
 [badge-role]: https://img.shields.io/ansible/role/47192.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/martianplatypus/ansible-role-ios-dev
 [badge-travis]: https://img.shields.io/travis/com/martianplatypus/ansible-role-ios-dev
-[link-galaxy]: https://galaxy.ansible.com/martianplatypus/ios-dev/
+[link-galaxy]: https://galaxy.ansible.com/martianplatypus/ios_dev/
 [link-license]: https://github.com/martianplatypus/ansible-role-ios-dev/blob/master/LICENSE
 [link-travis]: https://travis-ci.com/github/martianplatypus/ansible-role-ios-dev/
